@@ -1,0 +1,14 @@
+.userName {
+  width: 60%;
+  margin-left: 45px;
+}
+.userImage {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+.skeletonImage {
+  height: 100%;
+  border-radius: 50px;
+}/*# sourceMappingURL=Loader.Module.css.map */

@@ -1,0 +1,38 @@
+.user {
+  width: 50%;
+  margin: 10px auto;
+  background-color: #c2c2c2;
+  display: flex;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e8e8e8;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .user {
+    width: 90%;
+    height: 5rem;
+  }
+}
+.userName {
+  text-align: center;
+  margin: 0px auto;
+}
+@media (max-width: 768px) {
+  .userName {
+    font-size: 15px;
+  }
+}
+.userImage {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .userImage {
+    height: 50px;
+    width: 50px;
+  }
+}/*# sourceMappingURL=UserItem.module.css.map */

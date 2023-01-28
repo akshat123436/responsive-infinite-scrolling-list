@@ -1,0 +1,15 @@
+.user {
+  &Name {
+    width: 60%;
+    margin-left: 45px;
+  }
+  &Image {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+  }
+}
+.skeletonImage {
+  height: 100%;
+  border-radius: 50px;
+}
