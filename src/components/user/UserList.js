@@ -52,7 +52,7 @@ function UserList() {
           {displayItems(data)}
         </InfiniteScroll>
       ) : (
-        <Loader count={4}></Loader>
+        <Loader count={10}></Loader>
       )}
     </div>
   );
