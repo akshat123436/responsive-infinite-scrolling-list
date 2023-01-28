@@ -1,0 +1,9 @@
+.h1 {
+  text-align: center;
+  margin: 10px;
+}
+@media (max-width: 768px) {
+  .h1 {
+    font-size: medium;
+  }
+}/*# sourceMappingURL=UserList.module.css.map */

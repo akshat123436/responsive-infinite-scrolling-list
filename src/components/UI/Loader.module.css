@@ -7,6 +7,12 @@
   height: 100px;
   width: 100px;
 }
+@media (max-width: 768px) {
+  .userImage {
+    height: 50px;
+    width: 50px;
+  }
+}
 
 .skeletonImage {
   height: 100%;

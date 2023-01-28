@@ -3,6 +3,7 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroller";
 import Loader from "../UI/Loader.js";
 import UserItem from "./UserItem.js";
+import styles from "../../styles/UserList.module.css";
 function UserList() {
   const [data, setData] = useState([]);
   const [listCount, setListCount] = useState(10);
@@ -39,6 +40,7 @@ function UserList() {
   };
   return (
     <div>
+      <h1 className={styles.h1}>YOUR CONTACT LIST : </h1>
       {data.length ? (
         <InfiniteScroll
           pageStart={0}
