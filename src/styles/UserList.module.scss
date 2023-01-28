@@ -1,11 +1,21 @@
+@keyframes ComeFromTop {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .h1 {
   text-align: center;
   margin: 10px;
+  animation: 1s ease-out 0s 1 ComeFromTop;
   @media (max-width: 768px) {
     font-size: medium;
   }
 }
 .button {
+  animation: 1s ease-out 0s 1 ComeFromTop;
   border: none;
   padding: 10px;
   display: block;

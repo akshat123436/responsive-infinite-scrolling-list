@@ -9,10 +9,6 @@
   border: 2px solid #e8e8e8;
   border-radius: 20px;
   transition: 0.3s;
-  &:hover {
-    color: white;
-    background-color: black;
-  }
   @media (max-width: 768px) {
     width: 90%;
     height: 5rem;
