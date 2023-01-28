@@ -4,7 +4,7 @@ import InfiniteScroll from "react-infinite-scroller";
 import Loader from "../UI/Loader.js";
 import UserItem from "./UserItem.js";
 import styles from "../../styles/UserList.module.css";
-function UserList() {
+function UserList({ setUserDetails }) {
   const [data, setData] = useState([]);
   const [listCount, setListCount] = useState(10);
   const [hasMore, setHasMore] = useState(true);
@@ -38,8 +38,14 @@ function UserList() {
       }, 1000);
     }
   };
+  const logoutHandler = () => {
+    setUserDetails({ username: "", password: "" });
+  };
   return (
     <div>
+      <button className={styles.button} onClick={logoutHandler}>
+        LOGOUT
+      </button>
       <h1 className={styles.h1}>YOUR CONTACT LIST : </h1>
       {data.length ? (
         <InfiniteScroll

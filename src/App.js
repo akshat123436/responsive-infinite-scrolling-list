@@ -27,7 +27,11 @@ function App() {
         <Route
           path="/home"
           element={
-            isLoggendIn() ? <UserList></UserList> : <Navigate to="/" replace />
+            isLoggendIn() ? (
+              <UserList setUserDetails={setUserDetails}></UserList>
+            ) : (
+              <Navigate to="/" replace />
+            )
           }
         ></Route>
       </Routes>
