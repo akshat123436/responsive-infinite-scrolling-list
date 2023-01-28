@@ -33,6 +33,8 @@ function LoginPage({ setUserDetails }) {
       password.current.value !== "bar"
     ) {
       showAlert.error("Username or Password incorrect!", { ...options });
+    } else {
+      showAlert.success("logged in successfully", { ...options });
     }
   };
   return (

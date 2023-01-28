@@ -3,6 +3,7 @@ import axios from "axios";
 import InfiniteScroll from "react-infinite-scroller";
 import Loader from "../UI/Loader.js";
 import UserItem from "./UserItem.js";
+import { useAlert, transitions, positions } from "react-alert";
 import styles from "../../styles/UserList.module.css";
 function UserList({ setUserDetails }) {
   const [data, setData] = useState([]);
@@ -38,8 +39,17 @@ function UserList({ setUserDetails }) {
       }, 1000);
     }
   };
+  const showAlert = useAlert();
+
+  const options = {
+    position: positions.BOTTOM_CENTER,
+    timeout: 2000,
+    offset: "30px",
+    transition: transitions.SCALE,
+  };
   const logoutHandler = () => {
     setUserDetails({ username: "", password: "" });
+    showAlert.success("logged out successfully", { ...options });
   };
   return (
     <div>
